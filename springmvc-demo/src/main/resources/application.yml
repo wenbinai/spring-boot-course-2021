@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: springmvc-demo
+server:
+  port: 8081
+logging:
+  level:
+    root: warn
+    edu:
+      nefu: debug
+  pattern:
+    console: '%-5level %C.%M[%line] - %msg%n'
