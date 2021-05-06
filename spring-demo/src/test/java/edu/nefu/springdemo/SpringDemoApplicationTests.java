@@ -1,10 +1,10 @@
-package edunefu.springmvcdemo;
+package edu.nefu.springdemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringmvcDemoApplicationTests {
+class SpringDemoApplicationTests {
 
     @Test
     void contextLoads() {

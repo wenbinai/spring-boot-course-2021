@@ -1,4 +1,4 @@
-package edunefu.springdemo;
+package edu.nefu.springdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
