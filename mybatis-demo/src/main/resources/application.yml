@@ -19,3 +19,7 @@ logging:
       nefu: debug
   pattern:
     console: '%-5level %C.%M[%line] - %msg%n'
+#mybatis-plus:
+#  global-config:
+#    db-config:
+#      id-type: assign_id
