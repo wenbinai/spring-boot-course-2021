@@ -12,4 +12,14 @@ public class Slf4jTest {
         log.debug("slf4jTest");
         log.debug(log.getClass().getName());
     }
+
+    @Test
+    public void slf4jTest01() {
+        // 测试占位符的使用
+        var msg = "用户";
+        if (2 > 1) {
+            msg = "管理员";
+        }
+        log.debug("当前权限是: {}", msg);
+    }
 }
