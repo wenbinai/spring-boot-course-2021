@@ -15,7 +15,7 @@ class AddressMapperTest {
     @Test
     public void addAddress_test() {
         Address address = Address.builder()
-                .detail("林大")
+                .detail("nefu")
                 .userId(1L)
                 .build();
         addressMapper.insert(address);
