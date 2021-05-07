@@ -1,7 +1,6 @@
 package edu.nefu.mybatisdemo.example05;
 
 import edu.nefu.mybatisdemo.entity.User;
-import edu.nefu.mybatisdemo.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,6 +15,11 @@ public class UserService05 {
     @Autowired
     public UserMapper05 userMapper05;
 
+    /**
+     * 注意: 需要将受检异常转抛为RuntimeException才能触发事务回滚
+     *
+     * @param user
+     */
     public void addUser(User user) {
         userMapper05.insert(user);
         try {
