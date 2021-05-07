@@ -24,4 +24,18 @@ public class AccountService07 {
         }
         return account;
     }
+
+    public Account reduceOne(Integer uid) {
+        Account account = accountMapper07.selectById(uid);
+        float balance = account.getBalance() - 10;
+        if (balance < 0) {
+            throw new RuntimeException("余额不足");
+        }
+        account.setBalance(balance);
+        int update = accountMapper07.updateById(account);
+        if (update == 0) {
+            throw new RuntimeException("乐观锁, 余额不足");
+        }
+        return account;
+    }
 }

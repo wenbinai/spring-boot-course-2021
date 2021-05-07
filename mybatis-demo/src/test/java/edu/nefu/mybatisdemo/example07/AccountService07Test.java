@@ -46,4 +46,26 @@ class AccountService07Test {
         // 关闭线程池
         service.shutdown();
     }
+
+    @Test
+    public void reduceOne_test() throws InterruptedException {
+        ExecutorService service = Executors.newCachedThreadPool();
+        int count = 100;
+        CountDownLatch latch = new CountDownLatch(count);
+        service.execute(() -> {
+            for (int i = 0; i < count; i++) {
+                try {
+                    Thread.sleep(100);
+                    Account account = accountService07.reduceOne(1);
+                    log.debug("余额: {}", account.getBalance());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } finally {
+                    latch.countDown();
+                }
+            }
+        });
+        latch.await();
+        service.shutdown();
+    }
 }
