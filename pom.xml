@@ -16,6 +16,7 @@
     <modules>
         <module>spring-demo</module>
         <module>springmvc-demo</module>
+        <module>mybatis-demo</module>
     </modules>
 
 
