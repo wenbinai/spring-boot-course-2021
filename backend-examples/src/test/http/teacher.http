@@ -1,0 +1,30 @@
+POST http://localhost:8080/api/teacher/courses
+token: 7b94adfc3169d119621323d5173b1d4c28e8755c46240206ab8f193fd01cc3395163b48e9b78fd4845c6153c584309c683834d0830f6f68447d6aa5a9ec05661
+Content-Type: application/json
+
+{
+  "name": "Java语言程序设计"
+}
+
+###
+POST http://localhost:8080/api/teacher/students
+token: 7b94adfc3169d119621323d5173b1d4c28e8755c46240206ab8f193fd01cc3395163b48e9b78fd4845c6153c584309c683834d0830f6f68447d6aa5a9ec05661
+Content-Type: application/json
+
+{
+  "cid": 1391205658883907586,
+  "students": [
+    {
+      "clazz": "软件1班",
+      "name": "艾文斌",
+      "number": "2018214444"
+    },
+    {
+      "clazz": "软件2班",
+      "name": "郭佳庆",
+      "number": "2018214446"
+    }
+  ]
+}
+
+###

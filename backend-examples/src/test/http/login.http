@@ -5,7 +5,11 @@ POST http://localhost:8080/api/login
 Content-Type: application/json
 
 {
-  "number": "1001",
-  "password": "1001"
+  "number": "2018234444",
+  "password": "2018234444"
 }
+
+###
+GET http://localhost:8080/swagger-ui/
+
 ###
