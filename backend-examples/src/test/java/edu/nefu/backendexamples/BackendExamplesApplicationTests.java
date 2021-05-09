@@ -10,4 +10,10 @@ class BackendExamplesApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    void parseIntWithNUll() {
+        int i = Integer.parseInt(null);
+        System.out.println(i);
+    }
+
 }
