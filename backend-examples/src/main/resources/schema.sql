@@ -50,3 +50,21 @@ create table if not exists student_course
     index (course_id),
     index (student_id)
 );
+
+create table if not exists teacher_count (
+    id bigint(19) not null primary key,
+    count int ,
+    create_time datetime not null default current_timestamp,
+    update_time datetime not null default current_timestamp on update current_timestamp,
+    version int default 0
+);
+
+create table if not exists student_teacher (
+    id bigint(19) not null primary  key,
+    student_id bigint(19) not null,
+    teacher_id bigint(19) not null,
+    create_time datetime not null default current_timestamp,
+    update_time datetime not null default current_timestamp on update current_timestamp,
+    index (teacher_id),
+    index (student_id)
+)
