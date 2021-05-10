@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.nefu.backendexamples.mapper.StudentTeacherMapper">
+    <select id="getTeacher" resultType="edu.nefu.backendexamples.dto.TeacherDTO">
+        select u.name,
+               u.number,
+               t.title
+        from user u join teacher t
+        on u.id = t.id
+        where u.id = (select st.teacher_id from student_teacher st where st.student_id = #{sid})
+    </select>
+</mapper>

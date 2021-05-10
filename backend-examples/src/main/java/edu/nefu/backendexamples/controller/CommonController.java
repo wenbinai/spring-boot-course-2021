@@ -1,9 +1,9 @@
 package edu.nefu.backendexamples.controller;
 
 import edu.nefu.backendexamples.common.Role;
+import edu.nefu.backendexamples.dto.TeacherDTO;
 import edu.nefu.backendexamples.entity.Course;
-import edu.nefu.backendexamples.service.CourseService;
-import edu.nefu.backendexamples.service.UserService;
+import edu.nefu.backendexamples.service.*;
 import edu.nefu.backendexamples.vo.ResultVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -21,23 +21,40 @@ public class CommonController {
     private UserService userService;
     @Autowired
     private CourseService courseService;
+    @Autowired
+    private TeacherCountService teacherCountService;
+    @Autowired
+    private StudentTeacherService studentTeacherService;
+    @Autowired
+    private TeacherService teacherService;
+
+    @ApiOperation("列出所有教师")
+    @GetMapping("teachers")
+    public ResultVO listTeachers() {
+        List<TeacherDTO> teachers = teacherService.list();
+        return ResultVO.success(Map.of("teachers", teachers));
+    }
 
     @ApiOperation("学生选择教师")
-    @PostMapping("graduation/teacher")
-    public ResultVO chooseTeacher(@RequestAttribute("uid") long uid) {
-        return null;
+    @PostMapping("graduation/teacher/{tid}")
+    public ResultVO chooseTeacher(@PathVariable("tid") long tid,
+                                  @RequestAttribute("uid") long uid) {
+        int count = studentTeacherService.chooseTeacher(uid, tid);
+        return ResultVO.success(Map.of("count", count));
     }
 
     @ApiOperation("学生查看自己选择的教师")
     @GetMapping("graduation/teacher")
     public ResultVO getTeacher(@RequestAttribute("uid") long uid) {
-        return null;
+        TeacherDTO teacher = studentTeacherService.getTeacher(uid);
+        return ResultVO.success(Map.of("teacher", teacher));
     }
 
     @ApiOperation("查看教师带的学生数量")
     @GetMapping("{teacherId}/count")
     public ResultVO getCount(@PathVariable("teacherId") long teacherId) {
-        return null;
+        int count = teacherCountService.getCountById(teacherId);
+        return ResultVO.success(Map.of("count", count));
     }
 
     @ApiOperation("登陆后首页信息, 加载用户全部信息")
