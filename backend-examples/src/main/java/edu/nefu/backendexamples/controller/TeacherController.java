@@ -22,6 +22,12 @@ public class TeacherController {
     @Autowired
     private UserService userService;
 
+    @ApiOperation("教师查看选择自己的学生")
+    @GetMapping("graduation/students")
+    public ResultVO listStudents(@RequestAttribute("uid") long uid) {
+        return null;
+    }
+
 
     @ApiOperation("添加课程，并返回当前教师全部课程")
     @PostMapping("courses")

@@ -16,6 +16,12 @@ public class AdminController {
     @Autowired
     private UserService userService;
 
+    @ApiOperation("初始化教师所带学生数量")
+    @PostMapping("init/teacher/count")
+    public ResultVO initTeacherCount() {
+        return null;
+    }
+
     @ApiOperation("添加教师")
     @PostMapping("teachers")
     public ResultVO addTeacher(@RequestBody TeacherDTO teacherDTO) {

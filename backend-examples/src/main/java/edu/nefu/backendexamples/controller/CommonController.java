@@ -22,6 +22,24 @@ public class CommonController {
     @Autowired
     private CourseService courseService;
 
+    @ApiOperation("学生选择教师")
+    @PostMapping("graduation/teacher")
+    public ResultVO chooseTeacher(@RequestAttribute("uid") long uid) {
+        return null;
+    }
+
+    @ApiOperation("学生查看自己选择的教师")
+    @GetMapping("graduation/teacher")
+    public ResultVO getTeacher(@RequestAttribute("uid") long uid) {
+        return null;
+    }
+
+    @ApiOperation("查看教师带的学生数量")
+    @GetMapping("{teacherId}/count")
+    public ResultVO getCount(@PathVariable("teacherId") long teacherId) {
+        return null;
+    }
+
     @ApiOperation("登陆后首页信息, 加载用户全部信息")
     @GetMapping("home")
     public ResultVO getCourses(@RequestAttribute("uid") long uid,
