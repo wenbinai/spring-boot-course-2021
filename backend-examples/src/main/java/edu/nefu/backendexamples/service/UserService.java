@@ -18,6 +18,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -107,5 +108,32 @@ public class UserService {
             studentCourseMapper.insert(sc);
 
         }
+    }
+
+    /**
+     * 批量导入学生
+     *
+     * @param students
+     * @return
+     */
+    public List<Student> addStudents(List<StudentDTO> students) {
+        List<Student> res = new ArrayList<>();
+        for (StudentDTO studentDTO : students) {
+            User u = User.builder()
+                    .name(studentDTO.getName())
+                    .role(Role.STUDENT)
+                    .number(studentDTO.getNumber())
+                    .password(encoder.encode(studentDTO.getNumber()))
+                    .build();
+            userMapper.insert(u);
+
+            Student st = Student.builder()
+                    .id(u.getId())
+                    .clazz(studentDTO.getClazz())
+                    .build();
+            studentMapper.insert(st);
+            res.add(st);
+        }
+        return res;
     }
 }

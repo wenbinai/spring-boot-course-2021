@@ -1,0 +1,102 @@
+#批量导入学生接口
+POST http://localhost:8080/api/admin/students
+token: 7b94adfc3169d119621323d5173b1d4c28e8755c46240206ab8f193fd01cc3395163b48e9b78fd4845c6153c584309c683834d0830f6f68447d6aa5a9ec05661
+Content-Type: application/json
+
+[
+  {
+    "clazz": "1班",
+    "createTime": "2021-05-11T11:09:46.226Z",
+    "name": "ai",
+    "number": "20214444",
+    "updateTime": "2021-05-11T11:09:46.226Z"
+  },
+  {
+    "clazz": "1班",
+    "createTime": "2021-05-11T11:09:46.226Z",
+    "name": "bi",
+    "number": "20214445",
+    "updateTime": "2021-05-11T11:09:46.226Z"
+  },
+  {
+    "clazz": "1班",
+    "createTime": "2021-05-11T11:09:46.226Z",
+    "name": "ci",
+    "number": "20214446",
+    "updateTime": "2021-05-11T11:09:46.226Z"
+  },
+  {
+    "clazz": "1班",
+    "createTime": "2021-05-11T11:09:46.226Z",
+    "name": "di",
+    "number": "20214447",
+    "updateTime": "2021-05-11T11:09:46.226Z"
+  }
+]
+
+###
+POST http://localhost:8080/api/admin/students
+token: 7b94adfc3169d119621323d5173b1d4c28e8755c46240206ab8f193fd01cc3395163b48e9b78fd4845c6153c584309c683834d0830f6f68447d6aa5a9ec05661
+Content-Type: application/json
+
+[
+  {
+    "clazz": "1班",
+    "createTime": "2021-05-11T11:09:46.226Z",
+    "name": "ei",
+    "number": "20214448",
+    "updateTime": "2021-05-11T11:09:46.226Z"
+  },
+  {
+    "clazz": "1班",
+    "createTime": "2021-05-11T11:09:46.226Z",
+    "name": "fi",
+    "number": "20214449",
+    "updateTime": "2021-05-11T11:09:46.226Z"
+  },
+  {
+    "clazz": "1班",
+    "createTime": "2021-05-11T11:09:46.226Z",
+    "name": "gi",
+    "number": "20214450",
+    "updateTime": "2021-05-11T11:09:46.226Z"
+  },
+  {
+    "clazz": "1班",
+    "createTime": "2021-05-11T11:09:46.226Z",
+    "name": "hi",
+    "number": "20214451",
+    "updateTime": "2021-05-11T11:09:46.226Z"
+  },
+  {
+    "clazz": "1班",
+    "createTime": "2021-05-11T11:09:46.226Z",
+    "name": "ii",
+    "number": "20214452",
+    "updateTime": "2021-05-11T11:09:46.226Z"
+  },
+  {
+    "clazz": "1班",
+    "createTime": "2021-05-11T11:09:46.226Z",
+    "name": "ji",
+    "number": "20214453",
+    "updateTime": "2021-05-11T11:09:46.226Z"
+  },
+  {
+    "clazz": "1班",
+    "name": "hi",
+    "number": "20214454"
+  },
+  {
+    "clazz": "1班",
+    "name": "li",
+    "number": "20214455"
+  },
+  {
+    "clazz": "1班",
+    "name": "mi",
+    "number": "20214456"
+  }
+]
+
+###

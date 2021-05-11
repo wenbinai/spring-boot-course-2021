@@ -1,0 +1,729 @@
+没有乐观锁的并发日志
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030259556354(Long), 1392075102417952769(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030259556355(Long), 1392076588455665666(Long), 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 7(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030314082305(Long), 1392076587717468162(Long), 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 7(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030376996866(Long), 1392075102090797058(Long), 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 7(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030376996867(Long), 1392075102728331265(Long), 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 7(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030444105729(Long), 1392076587113488386(Long), 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030511214594(Long), 1392076588187230209(Long), 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030511214595(Long), 1392075101499400194(Long), 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030578323458(Long), 1392076588791209986(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030578323459(Long), 1392076586710835201(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 7
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030578323460(Long), 1392076587449032706(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 7
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030645432322(Long), 1392076589193863170(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392080030645432323(Long), 1392076586379485186(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 8
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[49] - count: 8
+
+
+
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 4(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 4(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 4(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 4(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 4(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 4(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 4(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 4(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 4(Integer), 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 4(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085113659580417(Long), 1392076587113488386(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 4
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085113709912065(Long), 1392075101499400194(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 4
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085113709912066(Long), 1392076588791209986(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 4
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 3(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085113777020929(Long), 1392076586710835201(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 4
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 3(Integer), 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085113777020930(Long), 1392076587449032706(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[29] - start count: 4
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=? WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 3(Integer), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085113844129793(Long), 1392075102728331265(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085113844129794(Long), 1392076587717468162(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085113911238658(Long), 1392076588187230209(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085113911238659(Long), 1392076586379485186(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085113978347521(Long), 1392076589193863170(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 5
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085114045456385(Long), 1392075102417952769(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 5
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 3
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085114045456386(Long), 1392076588455665666(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 3
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 4
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[38] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392085114112565250(Long), 1392075102090797058(Long), 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 4
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[52] - end count: 4
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[45] - count: 4
+
+有并发锁的日志
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 9
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 9
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 3(Integer), 1391075388356579329(Long), 2(Integer)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 3(Integer), 1391075388356579329(Long), 2(Integer)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 3(Integer), 1391075388356579329(Long), 2(Integer)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 3(Integer), 1391075388356579329(Long), 2(Integer)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 3(Integer), 1391075388356579329(Long), 2(Integer)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 3(Integer), 1391075388356579329(Long), 2(Integer)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 3(Integer), 1391075388356579329(Long), 2(Integer)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 3(Integer), 1391075388356579329(Long), 2(Integer)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 3(Integer), 1391075388356579329(Long), 2(Integer)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 8(Integer), 3(Integer), 1391075388356579329(Long), 2(Integer)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392096390620483586(Long), 1392075102090797058(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[50] - end count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+Exception in thread "pool-1-thread-1" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+Exception in thread "pool-1-thread-12" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[47] - count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+Exception in thread "pool-1-thread-5" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE id=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 8
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 7(Integer), 4(Integer), 1391075388356579329(Long), 3(Integer)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Exception in thread "pool-1-thread-8" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 7(Integer), 4(Integer), 1391075388356579329(Long), 3(Integer)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[30] - start count: 8
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: UPDATE teacher_count SET count=?, version=? WHERE id=? AND version=?
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 7(Integer), 4(Integer), 1391075388356579329(Long), 3(Integer)
+Exception in thread "pool-1-thread-6" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+	at java.base/java.lang.Thread.run(Thread.java:834)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+Exception in thread "pool-1-thread-13" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+Exception in thread "pool-1-thread-11" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+Exception in thread "pool-1-thread-9" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Exception in thread "pool-1-thread-4" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: INSERT INTO student_teacher ( id, student_id, teacher_id ) VALUES ( ?, ?, ? )
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1392096390851170306(Long), 1392076587113488386(Long), 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 1
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==>  Preparing: SELECT id,count,create_time,update_time,version FROM teacher_count WHERE (id = ?)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - ==> Parameters: 1391075388356579329(Long)
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==      Total: 1
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[50] - end count: 7
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug[137] - <==    Updates: 0
+DEBUG edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher[36] - update: 0
+Exception in thread "pool-1-thread-3" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Exception in thread "pool-1-thread-10" edu.nefu.backendexamples.common.MyException: 该教师指导学生数目已满, 不能选择, 请选择其他老师
+	at edu.nefu.backendexamples.service.StudentTeacherService.chooseTeacher(StudentTeacherService.java:38)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$FastClassBySpringCGLIB$$ea8ddbb4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at edu.nefu.backendexamples.service.StudentTeacherService$$EnhancerBySpringCGLIB$$8b526968.chooseTeacher(<generated>)
+	at edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0(StudentTeacherServiceTest.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+DEBUG edu.nefu.backendexamples.service.StudentTeacherServiceTest.lambda$chooseTeacher_test$0[47] - count: 7

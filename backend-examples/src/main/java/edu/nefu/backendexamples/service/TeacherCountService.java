@@ -17,4 +17,8 @@ public class TeacherCountService {
     public int updateCount(TeacherCount teacherCount) {
         return teacherCountMapper.updateById(teacherCount);
     }
+
+    public TeacherCount selectById(long id) {
+        return teacherCountMapper.selectById(id);
+    }
 }

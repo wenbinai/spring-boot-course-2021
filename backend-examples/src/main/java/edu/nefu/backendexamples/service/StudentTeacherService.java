@@ -25,16 +25,15 @@ public class StudentTeacherService {
 
     public int chooseTeacher(long uid, long tid) {
         // 查看教师还剩多少人
-        int count = teacherCountService.getCountById(tid);
+        TeacherCount teacherCount = teacherCountService.selectById(tid);
+        int count = teacherCount.getCount();
         log.debug("start count: {}", count);
         if (count <= 0) {
             throw new MyException(401, "该教师指导学生数目已满, 不能选择, 请选择其他老师");
         }
-        TeacherCount tc = TeacherCount.builder()
-                .id(tid)
-                .count(count - 1)
-                .build();
-        int update = teacherCountService.updateCount(tc);
+        teacherCount.setCount(count - 1);
+        int update = teacherCountService.updateCount(teacherCount);
+        log.debug("update: {}", update);
         if (update <= 0) {
             throw new MyException(401, "该教师指导学生数目已满, 不能选择, 请选择其他老师");
         } else {
@@ -47,6 +46,8 @@ public class StudentTeacherService {
             studentTeacherMapper.insert(st);
         }
         // 返回选择完后教师剩余的数量
-        return teacherCountService.getCountById(tid);
+        int resCount = teacherCountService.getCountById(tid);
+        log.debug("end count: {}", resCount);
+        return resCount;
     }
 }
