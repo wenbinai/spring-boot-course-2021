@@ -5,7 +5,7 @@ spring:
     name: miaosha-demo
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: 'jdbc:mysql://localhost:3306/miaohsa-demo?
+    url: 'jdbc:mysql://localhost:3306/miaosha-demo?
                    createDatabaseIfNotExist=true
                    &serverTimezone=Asia/Shanghai'
     username: root

@@ -1,9 +1,9 @@
 package edu.nefu.miaoshademo.entity;
 
-import com.baomidou.mybatisplus.annotation.FieldStrategy;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.time.LocalDateTime;
+
 import lombok.*;
 
 @Setter
@@ -14,6 +14,7 @@ import lombok.*;
 @AllArgsConstructor
 @TableName("stock_order")
 public class StockOrder {
+    @TableId(type = IdType.AUTO)
     private Integer id;
 
     private Integer sid;
