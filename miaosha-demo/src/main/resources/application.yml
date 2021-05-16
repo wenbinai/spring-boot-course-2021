@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: miaosha-demo
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: 'jdbc:mysql://localhost:3306/miaohsa-demo?
+                   createDatabaseIfNotExist=true
+                   &serverTimezone=Asia/Shanghai'
+    username: root
+    password: root
+
+  jackson:
+    default-property-inclusion: non_null
+
+logging:
+  level:
+    root: warn
+    edu:
+      nefu: debug
+  pattern:
+    console: '%-5level %C.%M[%line] - %msg%n'
